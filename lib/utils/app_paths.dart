@@ -16,4 +16,5 @@ class AppPaths {
   static const icPlaylistActive = 'assets/icons/ic_playlist_active.svg';
   static const icHistoryActive = 'assets/icons/ic_history_active.svg';
   static const icUserActive = 'assets/icons/ic_user_active.svg';
+  static const icLineTab = 'assets/icons/ic_line_tab.svg';
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:spotify_clone/utils/app_colors.dart';
+import 'package:spotify_clone/utils/app_paths.dart';
 import 'package:spotify_clone/widgets/text.dart';
 
 class FABBottomAppBarItem {
@@ -87,25 +88,43 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
           child: SizedBox(
             width: double.infinity,
             height: double.infinity,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: Stack(
+              alignment: Alignment.center,
               children: [
-                SizedBox(
-                  width: 25,
-                  height: 25,
-                  child: SvgPicture.asset(widget.currentIndex == index
-                      ? item.iconDataActive
-                      : item.iconData),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 25,
+                      height: 25,
+                      child: SvgPicture.asset(widget.currentIndex == index
+                          ? item.iconDataActive
+                          : item.iconData),
+                    ),
+                    const SizedBox(height: 5),
+                    TextUtils.text(
+                      text: item.text,
+                      fontSize: 12,
+                      color: widget.currentIndex == index
+                          ? AppColors.color1ED760
+                          : Colors.white.withOpacity(0.6),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 5),
-                TextUtils.text(
-                  text: item.text,
-                  fontSize: 12,
-                  color: widget.currentIndex == index
-                      ? AppColors.color1ED760
-                      : Colors.white.withOpacity(0.6),
-                ),
+                widget.currentIndex == index
+                    ? Positioned(
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        child: Container(
+                          width: double.infinity,
+                          height: 4,
+                          margin: const EdgeInsets.symmetric(horizontal: 10),
+                          child: SvgPicture.asset(AppPaths.icLineTab),
+                        ),
+                      )
+                    : Container(),
               ],
             ),
           ),

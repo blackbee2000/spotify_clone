@@ -50,7 +50,7 @@ class _MainPageState extends State<MainPage> {
         ),
         bottomNavigationBar: SizedBox(
           width: MediaQuery.of(context).size.width,
-          height: 100,
+          height: 110,
           child: FABBottomAppBar(
             height: double.infinity,
             centerItemText: '',
