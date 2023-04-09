@@ -24,4 +24,24 @@ class AppWords {
   static const playlist = 'Playlist';
   static const history = 'History';
   static const profile = 'Profile';
+  static const popular = 'Popular';
+  static const sisaRasa = 'Sisa Rasa';
+  static const mahalini = 'Mahalini';
+  static const todayHits = 'Today’s hits';
+  static const runtuh = 'Runtuh';
+  static const descriptionTopHits =
+      'Feby Putri, Fiersa B, Feby Putri, Fiersa B';
+  static const artists = 'Artists';
+  static const album = 'Album';
+  static const podcast = 'Podcast';
+  static const genre = 'Genre';
+  static const adele = 'Adele';
+  static const monthlyListeners = 'monthly listeners';
+  static const followers = 'Followers';
+  static const following = 'Following';
+  static const findFriends = 'Find friend';
+  static const share = 'Share';
+  static const mostlyPlayed = 'Mostly played';
+  static const mostlyTitle = 'Bigger Than The Whole';
+  static const mostlyName = 'Taylor Swift';
 }

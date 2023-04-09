@@ -19,4 +19,14 @@ class AppPaths {
   static const icLineTab = 'assets/icons/ic_line_tab.svg';
   static const icSearch = 'assets/icons/ic_search.svg';
   static const icSetting = 'assets/icons/ic_setting.svg';
+  static const singerBanner = 'assets/images/singer.png';
+  static const imageTodayHits = 'assets/images/today_hits.jpg';
+  static const icPlay = 'assets/icons/ic_play.svg';
+  static const icLineHome = 'assets/icons/ic_line_home.svg';
+  static const imageMusicTab = 'assets/images/banner_menu_music.jpg';
+  static const icMore = 'assets/icons/ic_more.svg';
+  static const icShare = 'assets/icons/ic_share.svg';
+  static const icFindFriend = 'assets/icons/ic_find_friends.svg';
+  static const avt = 'assets/images/avt.jpg';
+  static const mostView = 'assets/images/most_view.jpg';
 }
